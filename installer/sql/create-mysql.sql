@@ -3,7 +3,7 @@
 --
 CREATE TABLE `prefix_answers` (
   `qid` int(11) NOT NULL default '0',
-  `code` varchar(5) NOT NULL default '',
+  `code` varchar(50) NOT NULL default '',
   `answer` text NOT NULL,
   `sortorder` int(11) NOT NULL,
   `assessment_value` int(11) NOT NULL default '0',
@@ -110,7 +110,7 @@ CREATE TABLE `prefix_groups` (
 --
 CREATE TABLE `prefix_labels` (
   `lid` int(11) NOT NULL default '0',
-  `code` varchar(5) NOT NULL default '',
+  `code` varchar(50) NOT NULL default '',
   `title` text,
   `sortorder` int(11) NOT NULL,
   `language` varchar(20) default 'en',
@@ -224,7 +224,7 @@ CREATE TABLE `prefix_questions` (
   `sid` int(11) NOT NULL default '0',
   `gid` int(11) NOT NULL default '0',
   `type` varchar(1) NOT NULL default 'T',
-  `title` varchar(20) NOT NULL default '',
+  `title` varchar(50) NOT NULL default '',
   `question` text NOT NULL,
   `preg` text,
   `help` text,

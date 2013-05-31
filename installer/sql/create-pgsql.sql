@@ -11,7 +11,7 @@ SET default_with_oids = false;
 --
 CREATE TABLE prefix_answers (
     qid integer DEFAULT 0 NOT NULL,
-    code character varying(5) DEFAULT '' NOT NULL,
+    code character varying(50) DEFAULT '' NOT NULL,
     answer text NOT NULL,
     sortorder integer NOT NULL,
     "language" character varying(20) DEFAULT 'en',
@@ -118,7 +118,7 @@ CREATE TABLE prefix_groups (
 --
 CREATE TABLE prefix_labels (
     lid integer DEFAULT 0 NOT NULL,
-    code character varying(5) DEFAULT '' NOT NULL,
+    code character varying(50) DEFAULT '' NOT NULL,
     title text,
     sortorder integer NOT NULL,
     assessment_value integer DEFAULT 0 NOT NULL,
@@ -229,7 +229,7 @@ CREATE TABLE prefix_questions (
     sid integer DEFAULT 0 NOT NULL,
     gid integer DEFAULT 0 NOT NULL,
     "type" character varying(1) DEFAULT 'T' NOT NULL,
-    title character varying(20) DEFAULT '' NOT NULL,
+    title character varying(50) DEFAULT '' NOT NULL,
     question text NOT NULL,
     preg text,
     help text,

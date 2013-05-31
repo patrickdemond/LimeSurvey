@@ -4,7 +4,7 @@
 
 CREATE TABLE [prefix_answers] (
   [qid] int NOT NULL default '0',
-  [code] varchar(5) NOT NULL default '',
+  [code] varchar(50) NOT NULL default '',
   [answer] varchar(max) NOT NULL,
   [sortorder] int NOT NULL,
   [assessment_value] int NOT NULL default '0',
@@ -110,7 +110,7 @@ CREATE TABLE [prefix_groups] (
 --
 CREATE TABLE [prefix_labels] (
   [lid] int NOT NULL default '0',
-  [code] varchar(5) NOT NULL default '',
+  [code] varchar(50) NOT NULL default '',
   [title] varchar(max),
   [sortorder] int NOT NULL,
   [language] varchar(20) default 'en',
@@ -222,7 +222,7 @@ CREATE TABLE [prefix_questions] (
   [sid] int NOT NULL default '0',
   [gid] int NOT NULL default '0',
   [type] varchar(1) NOT NULL default 'T',
-  [title] varchar(20) NOT NULL default '',
+  [title] varchar(50) NOT NULL default '',
   [question] varchar(max) NOT NULL,
   [preg] varchar(max),
   [help] varchar(max),
