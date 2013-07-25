@@ -298,7 +298,7 @@ function activateSurvey($iSurveyID, $simulate = false)
             case "O":  //DROPDOWN LIST WITH COMMENT
                 if ($arow['aid'] != 'other' && strpos($arow['aid'],'comment')===false && strpos($arow['aid'],'othercomment')===false)
                 {
-                    $createsurvey[$arow['fieldname']] = "VARCHAR(5)";
+                    $createsurvey[$arow['fieldname']] = "VARCHAR(50)";
                 }
                 else
                 {
@@ -349,7 +349,7 @@ function activateSurvey($iSurveyID, $simulate = false)
                 $createsurvey[$arow['fieldname']] = "text";
                 break;
             default:
-                $createsurvey[$arow['fieldname']] = "VARCHAR(5)";
+                $createsurvey[$arow['fieldname']] = "VARCHAR(50)";
         }
     if ($prow->anonymized == 'N' && !array_key_exists('token',$createsurvey)) {
         $createsurvey['token'] = "VARCHAR(36)";
