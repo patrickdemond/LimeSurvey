@@ -2,7 +2,7 @@
     <?php echo CHtml::form(array("admin/usergroups/sa/edit/ugid/{$ugid}"), 'post', array('class'=>'form30', 'id'=>'usergroupform', 'name'=>'usergroupform')); ?>
         <ul>
         <li><label for='name'><?php $clang->eT("Name:"); ?></label>
-        <input type='text' size='50' maxlength='20' id='name' name='name' value="<?php echo $esrow['name']; ?>" /></li>
+        <input type='text' size='50' maxlength='50' id='name' name='name' value="<?php echo $esrow['name']; ?>" /></li>
         <li><label for='description'><?php $clang->eT("Description:"); ?></label>
         <textarea cols='50' rows='4' id='description' name='description'><?php echo $esrow['description']; ?></textarea></li>
         <ul><p><input type='submit' value='<?php $clang->eT("Update user group"); ?>' />

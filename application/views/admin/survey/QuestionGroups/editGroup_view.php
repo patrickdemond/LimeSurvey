@@ -32,7 +32,7 @@
     </div>
     <ul>
         <li>
-            <label for='randomization_group'><?php $clang->eT("Randomization group:"); ?></label><input type='text' maxlength='20' size='20' name='randomization_group' id='randomization_group' value="<?php echo $aGroupData[$aBaseLanguage]['randomization_group']; ?>" />
+            <label for='randomization_group'><?php $clang->eT("Randomization group:"); ?></label><input type='text' maxlength='50' size='20' name='randomization_group' id='randomization_group' value="<?php echo $aGroupData[$aBaseLanguage]['randomization_group']; ?>" />
         </li>
         <li>
             <label for='grelevance'><?php $clang->eT("Relevance equation:"); ?></label>

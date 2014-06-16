@@ -33,7 +33,7 @@
                         </div>
                     </li>
                     <?php if ($grouplang==$baselang){?>
-                        <li><label for='randomization_group'><?php $clang->eT("Randomization group:"); ?></label><input type='text' size='20' maxlength='20' name='randomization_group' id='randomization_group' /></li>
+                        <li><label for='randomization_group'><?php $clang->eT("Randomization group:"); ?></label><input type='text' size='20' maxlength='50' name='randomization_group' id='randomization_group' /></li>
                         <li>
                             <label for='grelevance'><?php $clang->eT("Relevance equation:"); ?></label>
                             <textarea cols='50' rows='1' id='grelevance' name='grelevance'></textarea>

@@ -359,7 +359,7 @@
                 $maximum_chars = intval(trim($qidattributes['maximum_chars']));
                 $maxlength = "maxlength='{$maximum_chars}' ";
             } else {
-                $maxlength = "maxlength='20' ";
+                $maxlength = "maxlength='50' ";
             }
 
             if (trim($qidattributes['text_input_width']) != '') {

@@ -3684,7 +3684,7 @@ function do_numerical($ia)
     }
     else
     {
-        $maxlength= " maxlength='20' ";
+        $maxlength= " maxlength='50' ";
     }
     if (trim($aQuestionAttributes['text_input_width'])!='')
     {
